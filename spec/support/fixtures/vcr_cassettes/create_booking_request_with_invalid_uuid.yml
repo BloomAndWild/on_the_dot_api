@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2
+    body:
+      encoding: UTF-8
+      string: '{"consumer":{"address":{"postCode":"SE11 5QY"}},"items":{"readyAt":"2018-03-14T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-14","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.4.3p205
+      Channel:
+      - ECOM
+      # Authorization:
+      # - Bearer {removed API key}
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '235'
+      Host:
+      - sbapi.onthedot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - authorization, Access-Control-Allow-Origin, Content-Type
+      Activityid:
+      - '849781814192768043923021'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 07 Mar 2018 16:14:12 GMT
+      Server:
+      - PassThrough-HTTP
+      Content-Length:
+      - '1531'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"data\":{ \"uuid\":\"cc82f82f-ca49-4a38-bc2f-f4d8dadce9ab\", \"consumer\":
+        { \"address\": { \"postCode\": \"SE115QY\" } }, \"store\": { \"storeId\":
+        \"BloomandWild1\",\"timeslotDuration\":2 }\n\t\t\t\t\t\t\t,\"items\":{\"readyAt\":\"2018-03-14T09:00:00Z\",\"deliveryDates\":[{\"closeTime\":\"18:00\",\"openTime\":\"09:00\",\"deliveryDate\":\"2018-03-14\"}]},\"zone\":\"within\",\"timeslots\":[{\"timeslotId\":\"3409275-im02hnk3ry0w\",\"expiresAt\":\"2018-03-07T17:24:12Z\",\"startTime\":\"2018-03-14T10:00:00Z\",\"endTime\":\"2018-03-14T12:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409276-im02hnk3ry0w\",\"expiresAt\":\"2018-03-07T17:24:12Z\",\"startTime\":\"2018-03-14T12:00:00Z\",\"endTime\":\"2018-03-14T14:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409277-im02hnk3ry0w\",\"expiresAt\":\"2018-03-07T17:24:12Z\",\"startTime\":\"2018-03-14T14:00:00Z\",\"endTime\":\"2018-03-14T16:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409278-im02hnk3ry0w\",\"expiresAt\":\"2018-03-07T17:24:12Z\",\"startTime\":\"2018-03-14T16:00:00Z\",\"endTime\":\"2018-03-14T18:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409279-im02hnk3ry0w\",\"expiresAt\":\"2018-03-07T17:24:12Z\",\"startTime\":\"2018-03-14T18:00:00Z\",\"endTime\":\"2018-03-14T20:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409280-im02hnk3ry0w\",\"expiresAt\":\"2018-03-07T17:24:12Z\",\"startTime\":\"2018-03-14T20:00:00Z\",\"endTime\":\"2018-03-14T22:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}}]},\"success\":{\"status\":\"OK\"}}"
+    http_version:
+  recorded_at: Wed, 07 Mar 2018 16:14:12 GMT
+- request:
+    method: post
+    uri: https://sbapi.onthedot.com/api/v1.0/booking
+    body:
+      encoding: UTF-8
+      string: '{"timeslot":{"timeslotId":"3409275-im02hnk3ry0w"},"webhook":"","orderType":"1","supplierId":"CitySprint","accountNumber":"W99969","serviceType":"","referenceNo":"","departmentReferenceNo":"","store":{"storeId":"BloomandWild1","instruction":"test"},"consumer":{"name":"test","email":"xyzstore@mail.com","mobileNumber":"7777777777","address":{"firstLine":"House
+        A","secondLine":"Street B","city":"City C","postCode":"HA11JU"},"instruction":""},"items":{"item":[{"referenceNumber":"21","itemContentCount":2,"totalValue":"0","weight":2,"length":2,"width":2,"height":2,"description":"2
+        desc"}],"readyAt":"2018-03-14T09:00:00Z"},"notificationType":""}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.4.3p205
+      Channel:
+      - ECOM
+      # Authorization:
+      # - Bearer {removed API key}
+      Content-Type:
+      - application/json
+      Uuid:
+      - '1111'
+      Content-Length:
+      - '645'
+      Host:
+      - sbapi.onthedot.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Access-Control-Allow-Headers:
+      - authorization, Access-Control-Allow-Origin, Content-Type
+      Activityid:
+      - '8497816037165982105877247'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 07 Mar 2018 16:14:12 GMT
+      Server:
+      - PassThrough-HTTP
+      Content-Length:
+      - '119'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{},"errors":[{"errorId":"ET-UD-001","errorMessage":"UUID does
+        not match with the one generated for timeslot"}]}'
+    http_version:
+  recorded_at: Wed, 07 Mar 2018 16:14:12 GMT
+recorded_with: VCR 4.0.0

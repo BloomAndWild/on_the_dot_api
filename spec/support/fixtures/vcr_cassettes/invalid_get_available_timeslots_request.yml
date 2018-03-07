@@ -5,7 +5,7 @@ http_interactions:
     uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2
     body:
       encoding: UTF-8
-      string: '{"consumer":{"address":{"postcode":"SE11 5QY"}},"items":{"readyAt":"2018-03-05T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-05","openTime":"09:00","closeTime":"18:00"},{"deliveryDate":"2018-03-06","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
+      string: '{"consumer":{"address":{"postCode":"SE11 5QY"}},"items":{"readyAt":"2018-03-05T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-05","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
     headers:
       Accept:
       - "*/*"
@@ -20,7 +20,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '304'
+      - '235'
       Host:
       - sbapi.onthedot.com
   response:
@@ -35,33 +35,33 @@ http_interactions:
       Access-Control-Allow-Headers:
       - authorization, Access-Control-Allow-Origin, Content-Type
       Activityid:
-      - '781455873589078026255189'
+      - '849403651580478622448298'
       Assertion:
-      - eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJpc3MiOiJ3c28yLm9yZy9wcm9kdWN0cy9hbSIsImV4cCI6MTUxOTc1NjM1MTgzOCwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9zdWJzY3JpYmVyIjoic3RldmVAYmxvb21hbmR3aWxkLmNvbSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25pZCI6IjE4OSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25uYW1lIjoiQmxvb21hbmRXaWxkIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9hcHBsaWNhdGlvbnRpZXIiOiJVbmxpbWl0ZWQiLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2FwaWNvbnRleHQiOiIvYXBpIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy92ZXJzaW9uIjoidjEuMCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdGllciI6IlVubGltaXRlZCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3VzZXJ0eXBlIjoiQVBQTElDQVRJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VuZHVzZXIiOiJzdGV2ZUBibG9vbWFuZHdpbGQuY29tIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9lbmR1c2VyVGVuYW50SWQiOiItMTIzNCIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2NvdW50cnkiOiJVSyIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InN0ZXZlQGJsb29tYW5kd2lsZC5jb20iLCAiaHR0cDovL3dzbzIub3JnL2NsYWltcy9naXZlbm5hbWUiOiJTdGV2ZSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2xhc3RuYW1lIjoiSmFuYXdheSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3JvbGUiOiJJbnRlcm5hbC9zdWJzY3JpYmVyLEludGVybmFsL2V2ZXJ5b25lLEludGVybmFsL2lkZW50aXR5IiwgImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdW5pcXVlSWQiOiIyMDUzNiJ9.
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJpc3MiOiJ3c28yLm9yZy9wcm9kdWN0cy9hbSIsImV4cCI6MTUyMDQzNjA4NDM3NCwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9zdWJzY3JpYmVyIjoic3RldmVAYmxvb21hbmR3aWxkLmNvbSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25pZCI6IjE4OSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25uYW1lIjoiQmxvb21hbmRXaWxkIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9hcHBsaWNhdGlvbnRpZXIiOiJVbmxpbWl0ZWQiLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2FwaWNvbnRleHQiOiIvYXBpIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy92ZXJzaW9uIjoidjEuMCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdGllciI6IlVubGltaXRlZCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3VzZXJ0eXBlIjoiQVBQTElDQVRJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VuZHVzZXIiOiJzdGV2ZUBibG9vbWFuZHdpbGQuY29tIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9lbmR1c2VyVGVuYW50SWQiOiItMTIzNCIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2NvdW50cnkiOiJVSyIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InN0ZXZlQGJsb29tYW5kd2lsZC5jb20iLCAiaHR0cDovL3dzbzIub3JnL2NsYWltcy9naXZlbm5hbWUiOiJTdGV2ZSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2xhc3RuYW1lIjoiSmFuYXdheSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3JvbGUiOiJJbnRlcm5hbC9zdWJzY3JpYmVyLEludGVybmFsL2V2ZXJ5b25lLEludGVybmFsL2lkZW50aXR5IiwgImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdW5pcXVlSWQiOiIyMDUzNiJ9.
       Channel:
       - ECOM
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Feb 2018 18:26:35 GMT
+      - Wed, 07 Mar 2018 15:11:10 GMT
       Server:
       - PassThrough-HTTP
       X-Forwarded-For:
-      - 185.52.144.70, 172.16.7.117
+      - 185.52.144.70, 172.16.8.11
       X-Forwarded-Port:
       - '8284'
       X-Forwarded-Proto:
       - http
       X-Jwt-Assertion:
-      - eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJpc3MiOiJ3c28yLm9yZy9wcm9kdWN0cy9hbSIsImV4cCI6MTUxOTc1NjM1MTgzOCwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9zdWJzY3JpYmVyIjoic3RldmVAYmxvb21hbmR3aWxkLmNvbSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25pZCI6IjE4OSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25uYW1lIjoiQmxvb21hbmRXaWxkIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9hcHBsaWNhdGlvbnRpZXIiOiJVbmxpbWl0ZWQiLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2FwaWNvbnRleHQiOiIvYXBpIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy92ZXJzaW9uIjoidjEuMCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdGllciI6IlVubGltaXRlZCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3VzZXJ0eXBlIjoiQVBQTElDQVRJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VuZHVzZXIiOiJzdGV2ZUBibG9vbWFuZHdpbGQuY29tIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9lbmR1c2VyVGVuYW50SWQiOiItMTIzNCIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2NvdW50cnkiOiJVSyIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InN0ZXZlQGJsb29tYW5kd2lsZC5jb20iLCAiaHR0cDovL3dzbzIub3JnL2NsYWltcy9naXZlbm5hbWUiOiJTdGV2ZSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2xhc3RuYW1lIjoiSmFuYXdheSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3JvbGUiOiJJbnRlcm5hbC9zdWJzY3JpYmVyLEludGVybmFsL2V2ZXJ5b25lLEludGVybmFsL2lkZW50aXR5IiwgImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdW5pcXVlSWQiOiIyMDUzNiJ9.
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJpc3MiOiJ3c28yLm9yZy9wcm9kdWN0cy9hbSIsImV4cCI6MTUyMDQzNjA4NDM3NCwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9zdWJzY3JpYmVyIjoic3RldmVAYmxvb21hbmR3aWxkLmNvbSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25pZCI6IjE4OSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25uYW1lIjoiQmxvb21hbmRXaWxkIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9hcHBsaWNhdGlvbnRpZXIiOiJVbmxpbWl0ZWQiLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2FwaWNvbnRleHQiOiIvYXBpIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy92ZXJzaW9uIjoidjEuMCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdGllciI6IlVubGltaXRlZCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3VzZXJ0eXBlIjoiQVBQTElDQVRJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VuZHVzZXIiOiJzdGV2ZUBibG9vbWFuZHdpbGQuY29tIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9lbmR1c2VyVGVuYW50SWQiOiItMTIzNCIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2NvdW50cnkiOiJVSyIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InN0ZXZlQGJsb29tYW5kd2lsZC5jb20iLCAiaHR0cDovL3dzbzIub3JnL2NsYWltcy9naXZlbm5hbWUiOiJTdGV2ZSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2xhc3RuYW1lIjoiSmFuYXdheSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3JvbGUiOiJJbnRlcm5hbC9zdWJzY3JpYmVyLEludGVybmFsL2V2ZXJ5b25lLEludGVybmFsL2lkZW50aXR5IiwgImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdW5pcXVlSWQiOiIyMDUzNiJ9.
       Content-Length:
-      - '105'
+      - '328'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '[{"error":{"field":"/consumer/address","message":"object has missing
-        required properties ([postCode])"}}]'
+      string: '{"data":{"consumer":{"address":{"postCode":"SE11 5QY"}},"items":{"readyAt":"2018-03-05T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-05","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}},"errors":[{"errorId":"ET-TS-006","errorMessage":"Invalid
+        input for deliveryDates"}]}'
     http_version:
-  recorded_at: Tue, 27 Feb 2018 18:26:35 GMT
+  recorded_at: Wed, 07 Mar 2018 15:11:10 GMT
 recorded_with: VCR 4.0.0

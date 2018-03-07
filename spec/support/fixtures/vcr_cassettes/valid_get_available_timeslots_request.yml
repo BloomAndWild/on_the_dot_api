@@ -5,7 +5,7 @@ http_interactions:
     uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2
     body:
       encoding: UTF-8
-      string: '{"consumer":{"address":{"postCode":"SE11 5QY"}},"items":{"readyAt":"2018-03-05T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-05","openTime":"09:00","closeTime":"18:00"},{"deliveryDate":"2018-03-06","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
+      string: '{"consumer":{"address":{"postCode":"SE11 5QY"}},"items":{"readyAt":"2018-03-14T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-14","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
     headers:
       Accept:
       - "*/*"
@@ -20,7 +20,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '304'
+      - '235'
       Host:
       - sbapi.onthedot.com
   response:
@@ -31,22 +31,22 @@ http_interactions:
       Access-Control-Allow-Headers:
       - authorization, Access-Control-Allow-Origin, Content-Type
       Activityid:
-      - '781084049549763975720376'
+      - '849403447478032444512344'
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Feb 2018 17:24:35 GMT
+      - Wed, 07 Mar 2018 15:11:10 GMT
       Server:
       - PassThrough-HTTP
       Content-Length:
-      - '2764'
+      - '1531'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: "{\"data\":{ \"uuid\":\"df2e212b-c8e4-42f7-8b2b-9d77f03eb7be\", \"consumer\":
+      string: "{\"data\":{ \"uuid\":\"53584bce-912c-4522-b839-4cab2ef99dc8\", \"consumer\":
         { \"address\": { \"postCode\": \"SE115QY\" } }, \"store\": { \"storeId\":
-        \"BloomandWild1\",\"timeslotDuration\":2 }\n\t\t\t\t\t\t\t,\"items\":{\"readyAt\":\"2018-03-05T09:00:00Z\",\"deliveryDates\":[{\"closeTime\":\"18:00\",\"openTime\":\"09:00\",\"deliveryDate\":\"2018-03-05\"},{\"closeTime\":\"18:00\",\"openTime\":\"09:00\",\"deliveryDate\":\"2018-03-06\"}]},\"zone\":\"within\",\"timeslots\":[{\"timeslotId\":\"3408090-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-05T10:00:00Z\",\"endTime\":\"2018-03-05T12:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408091-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-05T12:00:00Z\",\"endTime\":\"2018-03-05T14:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408092-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-05T14:00:00Z\",\"endTime\":\"2018-03-05T16:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408093-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-05T16:00:00Z\",\"endTime\":\"2018-03-05T18:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408094-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-05T18:00:00Z\",\"endTime\":\"2018-03-05T20:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408095-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-05T20:00:00Z\",\"endTime\":\"2018-03-05T22:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408096-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-06T10:00:00Z\",\"endTime\":\"2018-03-06T12:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408097-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-06T12:00:00Z\",\"endTime\":\"2018-03-06T14:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408098-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-06T14:00:00Z\",\"endTime\":\"2018-03-06T16:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408099-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-06T16:00:00Z\",\"endTime\":\"2018-03-06T18:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408100-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-06T18:00:00Z\",\"endTime\":\"2018-03-06T20:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3408101-4hg1q04u1am8\",\"expiresAt\":\"2018-02-27T18:34:34Z\",\"startTime\":\"2018-03-06T20:00:00Z\",\"endTime\":\"2018-03-06T22:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}}]},\"success\":{\"status\":\"OK\"}}"
+        \"BloomandWild1\",\"timeslotDuration\":2 }\n\t\t\t\t\t\t\t,\"items\":{\"readyAt\":\"2018-03-14T09:00:00Z\",\"deliveryDates\":[{\"closeTime\":\"18:00\",\"openTime\":\"09:00\",\"deliveryDate\":\"2018-03-14\"}]},\"zone\":\"within\",\"timeslots\":[{\"timeslotId\":\"3409275-blnlrtp7x40k\",\"expiresAt\":\"2018-03-07T16:21:09Z\",\"startTime\":\"2018-03-14T10:00:00Z\",\"endTime\":\"2018-03-14T12:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409276-blnlrtp7x40k\",\"expiresAt\":\"2018-03-07T16:21:09Z\",\"startTime\":\"2018-03-14T12:00:00Z\",\"endTime\":\"2018-03-14T14:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409277-blnlrtp7x40k\",\"expiresAt\":\"2018-03-07T16:21:09Z\",\"startTime\":\"2018-03-14T14:00:00Z\",\"endTime\":\"2018-03-14T16:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409278-blnlrtp7x40k\",\"expiresAt\":\"2018-03-07T16:21:09Z\",\"startTime\":\"2018-03-14T16:00:00Z\",\"endTime\":\"2018-03-14T18:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409279-blnlrtp7x40k\",\"expiresAt\":\"2018-03-07T16:21:09Z\",\"startTime\":\"2018-03-14T18:00:00Z\",\"endTime\":\"2018-03-14T20:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409280-blnlrtp7x40k\",\"expiresAt\":\"2018-03-07T16:21:09Z\",\"startTime\":\"2018-03-14T20:00:00Z\",\"endTime\":\"2018-03-14T22:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}}]},\"success\":{\"status\":\"OK\"}}"
     http_version:
-  recorded_at: Tue, 27 Feb 2018 17:24:35 GMT
+  recorded_at: Wed, 07 Mar 2018 15:11:10 GMT
 recorded_with: VCR 4.0.0

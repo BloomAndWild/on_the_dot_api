@@ -1,7 +1,8 @@
 module OnTheDotApi
   class Operation
-    def initialize(payload)
+    def initialize(payload, options = {})
       @payload = payload
+      @options = options
     end
 
     def config
@@ -13,7 +14,7 @@ module OnTheDotApi
         "Channel" => "ECOM",
         "Authorization" => "Bearer #{api_key}",
         "Content-Type" => "application/json"
-      }
+      }.merge(options.fetch(:headers, {}))
     end
 
     def execute
@@ -37,7 +38,7 @@ module OnTheDotApi
     end
 
     private
-    attr_reader :payload
+    attr_reader :payload, :options
 
     def base_url
       config.base_url
