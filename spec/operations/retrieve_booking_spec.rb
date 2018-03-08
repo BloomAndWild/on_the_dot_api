@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OnTheDotApi::Operations::CancelBooking do
+describe OnTheDotApi::Operations::RetrieveBooking do
   describe '#execute' do
     before do
       configure_client
@@ -36,23 +36,24 @@ describe OnTheDotApi::Operations::CancelBooking do
     end
 
     context "with valid payload" do
-      it "cancels booking" do
-        VCR.use_cassette('valid_cancel_booking_request') do
+      it "retrieves booking information" do
+        VCR.use_cassette('valid_retrieve_booking_request') do
           response_hash = described_class.new(
             order_number: booking_response["data"]["orderNo"]
           ).execute
 
           expect(response_hash["success"]).to eq({"status"=>"ok"})
+          expect(response_hash["data"]["status"]).to eq("Booked")
         end
       end
     end
 
     context "with random order number" do
       it "raises 'OnTheDotApi::Errors::ResponseError' exception" do
-        VCR.use_cassette('cancel_booking_request_with_random_order_number') do
+        VCR.use_cassette('retrieve_booking_request_with_invalid_order_number') do
           expect {
-            described_class.new(order_number: "nil").execute
-          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "404 Not Found")
+            described_class.new(order_number: "abc").execute
+          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
         end
       end
     end

@@ -37,7 +37,7 @@ end
 #### Get available timeslots
 
 ```
-OnTheDotApi::Operations::GetAvailableTimeslots.new(payload: `{YOUR PAYLOAD}`).execute
+OnTheDotApi::Operations::GetAvailableTimeslots.new(payload: {YOUR PAYLOAD}).execute
 ```
 
 Implements - http://developers.onthedot.com/docs/#TimeslotV2.
@@ -46,8 +46,8 @@ Implements - http://developers.onthedot.com/docs/#TimeslotV2.
 
 ```
 OnTheDotApi::Operations::CreateBooking.new(
-  payload: `{YOUR PAYLOAD}`,
-  headers: { "UUID": `{UUID FROM TIMESLOTS RESPONSE}` }
+  payload: {YOUR PAYLOAD},
+  headers: { "UUID": {UUID FROM TIMESLOTS RESPONSE} }
 ).execute
 ```
 
@@ -57,11 +57,21 @@ Implements - http://developers.onthedot.com/docs/#create-booking.
 
 ```
 OnTheDotApi::Operations::CancelBooking.new(
-  order_number: `{OnTheDot API ORDER NUMBER}`
+  order_number: {OnTheDot API ORDER NUMBER}
 ).execute
 ```
 
 Implements - http://developers.onthedot.com/docs/#cancel-booking.
+
+#### Retrieve booking
+
+```
+OnTheDotApi::Operations::RetrieveBooking.new(
+  order_number: {OnTheDot API ORDER NUMBER}
+).execute
+```
+
+Implements - http://developers.onthedot.com/docs/#retrieve-booking.
 
 ### Testing
 

@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2
+    body:
+      encoding: UTF-8
+      string: '{"consumer":{"address":{"postCode":"HA11JU"}},"items":{"readyAt":"2018-03-14T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-14","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.4.3p205
+      Channel:
+      - ECOM
+      # Authorization:
+      # - Bearer {removed API key}
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '233'
+      Host:
+      - sbapi.onthedot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - authorization, Access-Control-Allow-Origin, Content-Type
+      Activityid:
+      - '858311351125963967659431'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 08 Mar 2018 15:55:51 GMT
+      Server:
+      - PassThrough-HTTP
+      Content-Length:
+      - '1336'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"data\":{ \"uuid\":\"ee6025c9-0103-45ee-96f7-a4c58b22ff70\", \"consumer\":
+        { \"address\": { \"postCode\": \"HA11JU\" } }, \"store\": { \"storeId\": \"BloomandWild1\",\"timeslotDuration\":2
+        }\n\t\t\t\t\t\t\t,\"items\":{\"readyAt\":\"2018-03-14T09:00:00Z\",\"deliveryDates\":[{\"closeTime\":\"18:00\",\"openTime\":\"09:00\",\"deliveryDate\":\"2018-03-14\"}]},\"zone\":\"within\",\"timeslots\":[{\"timeslotId\":\"3409290-ef9vsdilzps8\",\"expiresAt\":\"2018-03-08T17:05:51Z\",\"startTime\":\"2018-03-14T12:00:00Z\",\"endTime\":\"2018-03-14T14:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409291-ef9vsdilzps8\",\"expiresAt\":\"2018-03-08T17:05:51Z\",\"startTime\":\"2018-03-14T14:00:00Z\",\"endTime\":\"2018-03-14T16:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409292-ef9vsdilzps8\",\"expiresAt\":\"2018-03-08T17:05:51Z\",\"startTime\":\"2018-03-14T16:00:00Z\",\"endTime\":\"2018-03-14T18:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409293-ef9vsdilzps8\",\"expiresAt\":\"2018-03-08T17:05:51Z\",\"startTime\":\"2018-03-14T18:00:00Z\",\"endTime\":\"2018-03-14T20:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}},{\"timeslotId\":\"3409294-ef9vsdilzps8\",\"expiresAt\":\"2018-03-08T17:05:51Z\",\"startTime\":\"2018-03-14T20:00:00Z\",\"endTime\":\"2018-03-14T22:00:00Z\",\"quote\":{\"total\":\"0.00\",\"price\":\"0.00\",\"vat\":\"0.00\"}}]},\"success\":{\"status\":\"OK\"}}"
+    http_version:
+  recorded_at: Thu, 08 Mar 2018 15:55:51 GMT
+- request:
+    method: post
+    uri: https://sbapi.onthedot.com/api/v1.0/booking
+    body:
+      encoding: UTF-8
+      string: '{"timeslot":{"timeslotId":"3409290-ef9vsdilzps8"},"webhook":"","orderType":"1","supplierId":"CitySprint","accountNumber":"W99969","serviceType":"","referenceNo":"","departmentReferenceNo":"","store":{"storeId":"BloomandWild1","instruction":"test"},"consumer":{"name":"test","email":"xyzstore@mail.com","mobileNumber":"7777777777","address":{"firstLine":"House
+        A","secondLine":"Street B","city":"City C","postCode":"HA11JU"},"instruction":""},"items":{"item":[{"referenceNumber":"21","itemContentCount":2,"totalValue":"0","weight":2,"length":2,"width":2,"height":2,"description":"2
+        desc"}],"readyAt":"2018-03-14T09:00:00Z"},"notificationType":""}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.4.3p205
+      Channel:
+      - ECOM
+      # Authorization:
+      # - Bearer {removed API key}
+      Content-Type:
+      - application/json
+      Uuid:
+      - ee6025c9-0103-45ee-96f7-a4c58b22ff70
+      Content-Length:
+      - '645'
+      Host:
+      - sbapi.onthedot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - authorization, Access-Control-Allow-Origin, Content-Type
+      Activityid:
+      - '858311527743186339586613'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 08 Mar 2018 15:55:54 GMT
+      Server:
+      - PassThrough-HTTP
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"bookingType":"credit","orderType":"1","orderNo":"10004176","orderReferenceNo":"010004176801","orderDate":"2018-03-08T15:55:51Z","status":"Booked","trackingUrl":"https://www.onthedot.com/retailer/track-map/UUbTJYR0joBo7y3FzeNY_6XmEAuTnwbrsydmBalOumA~","pod":null,"podDate":null,"podTime":null,"supplierId":"CitySprint","subscriptionName":"","voucherCode":"","accountNumber":"W99969","amount":{"total":"6.95","vat":"1.39"},"store":{"storeId":"BloomandWild1","retailerName":"BloomandWild","imageUrl":null,"maxmiles":10,"minmiles":5,"timeslotDuration":2,"address":{"firstLine":"Studio
+        V203, Vox Studios","secondLine":"1-45 Durham Street","city":"London","state":null,"postCode":"SE11
+        5JH","country":"United Kingdom"},"info":{"storeName":"BloomandWild","mobileNumber":"7777777777","businessPhoneNumber":"7777777777","website":"http://www.bloomandwild.com/","storeDesc":"Flower
+        & Gift Delivery, Through The Letterbox","userName":"steve@bloomandwild.com","branchEmail":"steve@bloomandwild.com","branchInStoreTime":0,"collectionLeadTime":0,"serviceCenterCode":"WO-SD","accountType":"credit","accountNumber":"CS027280","openTime":"09:00:00","closeTime":"18:00:00","openingHours":{"FRI":"09:00
+        - 18:00","MON":"09:00 - 18:00","SAT":"00:00 - 00:00","SUN":"00:00 - 00:00","THU":"09:00
+        - 18:00","TUE":"09:00 - 18:00","WED":"09:00 - 18:00"},"bankHolidayDetails":{"Boxing
+        Day":"09:00 - 18:00","ChristmasDay":"Closed","Early May Bank Holiday":"09:00
+        - 18:00","Easter Monday":"09:00 - 18:00","Easter Sunday":"09:00 - 18:00","Good
+        Friday":"09:00 - 18:00","New Years Day":"Closed","Spring Bank Holiday":"09:00
+        - 18:00","Stock Take Day":"Closed","Summer Bank Holiday":"09:00 - 18:00","Year
+        End Stock Day":"Closed"},"service":"YV"},"location":{"lat":"51.48598","lng":"-0.11839"},"knowMore":{"likeToBePartnerRetailer":0,"storeType":0,"havePortal":0,"shippingDetail":0,"instruction":"test"},"isDrivenMileage":"Y"},"timeslot":{"timeslotId":"3409290-ef9vsdilzps8","startTime":"2018-03-14T12:00:00Z","endTime":"2018-03-14T14:00:00Z"},"consumer":{"name":"test","email":"xyzstore@mail.com","instruction":"","webhook":"","mobileNumber":"7777777777","address":{"firstLine":"House
+        A","secondLine":"Street B","city":"City C","state":null,"postCode":"HA11JU","country":""}},"items":{"readyAt":null,"deliveryDate":null,"item":[{"referenceNumber":"21","itemContentCount":2,"totalValue":"0","weight":2.0,"length":2.0,"width":2.0,"height":2.0,"description":"2
+        desc"}],"totalItemCount":"0","totalItemWeight":"0","deliverBy":null,"collectionWindow":null,"deliveryWindow":null},"serviceType":"YV","uuid":"ee6025c9-0103-45ee-96f7-a4c58b22ff70","referenceNo":"","departmentReferenceNo":"","transactionDate":1520524554661,"referenceNo3":null,"statusId":null},"success":{"status":"ok"}
+        }'
+    http_version:
+  recorded_at: Thu, 08 Mar 2018 15:55:54 GMT
+- request:
+    method: get
+    uri: https://sbapi.onthedot.com/api/v1.0/bookings/orderid/BloomandWild1/10004176
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.4.3p205
+      Channel:
+      - ECOM
+      # Authorization:
+      # - Bearer {removed API key}
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Host:
+      - sbapi.onthedot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - authorization, Access-Control-Allow-Origin, Content-Type
+      Activityid:
+      - '85831181254295914185426'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 08 Mar 2018 15:55:54 GMT
+      Server:
+      - PassThrough-HTTP
+      Content-Length:
+      - '2752'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"bookingType":"credit","orderType":"1","orderNo":"10004176","orderReferenceNo":"010004176801","orderDate":"2018-03-08T15:55:51Z","status":"Booked","trackingUrl":"https://www.onthedot.com/retailer/track-map/UUbTJYR0joBo7y3FzeNY_6XmEAuTnwbrsydmBalOumA~","pod":null,"podDate":null,"podTime":null,"supplierId":"CitySprint","subscriptionName":"","voucherCode":"","accountNumber":"W99969","amount":{"total":"6.95","vat":"1.39"},"store":{"storeId":"BloomandWild1","retailerName":"BloomandWild","imageUrl":null,"maxmiles":10,"minmiles":5,"timeslotDuration":2,"address":{"firstLine":"Studio
+        V203, Vox Studios","secondLine":"1-45 Durham Street","city":"London","state":null,"postCode":"SE11
+        5JH","country":"United Kingdom"},"info":{"storeName":"BloomandWild","mobileNumber":"7777777777","businessPhoneNumber":"7777777777","website":"http://www.bloomandwild.com/","storeDesc":"Flower
+        & Gift Delivery, Through The Letterbox","userName":"steve@bloomandwild.com","branchEmail":"steve@bloomandwild.com","branchInStoreTime":0,"collectionLeadTime":0,"serviceCenterCode":"WO-SD","accountType":"credit","accountNumber":"CS027280","openTime":"09:00:00","closeTime":"18:00:00","openingHours":{"FRI":"09:00
+        - 18:00","MON":"09:00 - 18:00","SAT":"00:00 - 00:00","SUN":"00:00 - 00:00","THU":"09:00
+        - 18:00","TUE":"09:00 - 18:00","WED":"09:00 - 18:00"},"bankHolidayDetails":{"Boxing
+        Day":"09:00 - 18:00","ChristmasDay":"Closed","Early May Bank Holiday":"09:00
+        - 18:00","Easter Monday":"09:00 - 18:00","Easter Sunday":"09:00 - 18:00","Good
+        Friday":"09:00 - 18:00","New Years Day":"Closed","Spring Bank Holiday":"09:00
+        - 18:00","Stock Take Day":"Closed","Summer Bank Holiday":"09:00 - 18:00","Year
+        End Stock Day":"Closed"},"service":"YV"},"location":{"lat":"51.48598","lng":"-0.11839"},"knowMore":{"likeToBePartnerRetailer":0,"storeType":0,"havePortal":0,"shippingDetail":0,"instruction":"test"},"isDrivenMileage":"Y"},"timeslot":{"timeslotId":"3409290-ef9vsdilzps8","startTime":"2018-03-14T12:00:00Z","endTime":"2018-03-14T14:00:00Z"},"consumer":{"name":"test","email":"xyzstore@mail.com","instruction":"","webhook":"","mobileNumber":"7777777777","address":{"firstLine":"House
+        A","secondLine":"Street B","city":"City C","state":null,"postCode":"HA11JU","country":""}},"items":{"readyAt":null,"deliveryDate":null,"item":[{"referenceNumber":"21","itemContentCount":2,"totalValue":"0","weight":2.0,"length":2.0,"width":2.0,"height":2.0,"description":"2
+        desc"}],"totalItemCount":"0","totalItemWeight":"0","deliverBy":null,"collectionWindow":null,"deliveryWindow":null},"serviceType":"YV","uuid":"ee6025c9-0103-45ee-96f7-a4c58b22ff70","referenceNo":"","departmentReferenceNo":"","transactionDate":1520524554661,"referenceNo3":null,"statusId":null},"success":{"status":"ok"}
+        }'
+    http_version:
+  recorded_at: Thu, 08 Mar 2018 15:55:54 GMT
+recorded_with: VCR 4.0.0
