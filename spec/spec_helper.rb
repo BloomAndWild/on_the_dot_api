@@ -8,6 +8,9 @@ Dotenv.load
 
 require_relative 'support/helpers/client_helper'
 
+require_relative 'support/payloads/get_available_timeslots_payload'
+require_relative 'support/payloads/create_booking_payload'
+
 VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!

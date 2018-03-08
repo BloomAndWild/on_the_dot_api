@@ -7,37 +7,13 @@ describe OnTheDotApi::Operations::GetAvailableTimeslots do
     end
 
     let(:config) { OnTheDotApi::Client.config }
+    let(:payload_helper) { GetAvailableTimeslotsPayload.new(store_id: config.store_id) }
 
     context "with valid payload" do
 
-      let(:valid_payload) {
-        {
-          consumer: {
-            address: {
-              postCode: "SE11 5QY"
-            }
-          },
-          items: {
-            readyAt: "2018-03-05T09:00:00Z",
-            deliveryDates: [
-              {
-                deliveryDate: "2018-03-05",
-                openTime: "09:00",
-                closeTime: "18:00"
-              },
-              {
-                deliveryDate: "2018-03-06",
-                openTime: "09:00",
-                closeTime: "18:00"
-              },
-            ],
-          },
-          store: {
-            storeId: config.store_id,
-            timeslotDuration: 2
-          }
-        }
-      }
+      let(:valid_payload) do
+        payload_helper.payload(delivery_date: "2018-03-14")
+      end
 
       it "returns valid response" do
         VCR.use_cassette('valid_get_available_timeslots_request') do
@@ -50,34 +26,9 @@ describe OnTheDotApi::Operations::GetAvailableTimeslots do
 
     context "with invalid payload" do
 
-      let(:invalid_payload) {
-        {
-          consumer: {
-            address: {
-              postcode: "SE11 5QY" # misspelled key
-            }
-          },
-          items: {
-            readyAt: "2018-03-05T09:00:00Z",
-            deliveryDates: [
-              {
-                deliveryDate: "2018-03-05",
-                openTime: "09:00",
-                closeTime: "18:00"
-              },
-              {
-                deliveryDate: "2018-03-06",
-                openTime: "09:00",
-                closeTime: "18:00"
-              },
-            ],
-          },
-          store: {
-            storeId: config.store_id,
-            timeslotDuration: 2
-          }
-        }
-      }
+      let(:invalid_payload) do
+        payload_helper.payload(delivery_date: "2018-03-05") # date is in the past
+      end
 
       it "raises 'OnTheDotApi::Errors::ResponseError' exception" do
         VCR.use_cassette('invalid_get_available_timeslots_request') do

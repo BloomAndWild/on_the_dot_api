@@ -42,6 +42,16 @@ OnTheDotApi::Operations::GetAvailableTimeslots.new(payload).execute
 
 Implements - http://developers.onthedot.com/docs/#TimeslotV2.
 
+#### Create a booking
+
+```
+OnTheDotApi::Operations::CreateBooking.new(payload, options).execute
+```
+
+This operation relies on the `get available timeslots` operation for `timeslot_id` and `UUID`. `timeslot_id` is passed to the payload and `UUID` - options as part of the HTTP headers. Check `create_book_spec.rb` for an example of usage.
+
+Implements - http://developers.onthedot.com/docs/#create-booking.
+
 ### Testing
 
 To run rspec specs you need to have OnTheDot API sandbox credentials (Api key and shop id). Those credentials should be added to `.env` file. `.env.sample` file is provided as example.
