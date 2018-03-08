@@ -17,7 +17,7 @@ describe OnTheDotApi::Operations::GetAvailableTimeslots do
 
       it "returns valid response" do
         VCR.use_cassette('valid_get_available_timeslots_request') do
-          response_hash = described_class.new(valid_payload).execute
+          response_hash = described_class.new(payload: valid_payload).execute
 
           expect(response_hash["success"]).to eq({"status"=>"OK"})
         end
@@ -33,7 +33,7 @@ describe OnTheDotApi::Operations::GetAvailableTimeslots do
       it "raises 'OnTheDotApi::Errors::ResponseError' exception" do
         VCR.use_cassette('invalid_get_available_timeslots_request') do
           expect {
-            described_class.new(invalid_payload).execute
+            described_class.new(payload: invalid_payload).execute
           }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
         end
       end

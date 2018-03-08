@@ -16,3 +16,4 @@
 /lib/on_the_dot_api/.DS_Store
 /*.gem
 /.idea/
+/.solargraph.yml

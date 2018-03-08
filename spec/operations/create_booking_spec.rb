@@ -17,14 +17,14 @@ describe OnTheDotApi::Operations::CreateBooking do
       timeslot_payload = timeslot_payload_helper.payload(
         delivery_date: delivery_date,
         postcode: "HA11JU")
-      timeslot_operation_class.new(timeslot_payload).execute
+      timeslot_operation_class.new(
+        payload: timeslot_payload
+      ).execute
     end
     let(:timeslot_id) { timeslot_response["data"]["timeslots"].first["timeslotId"] }
     let(:timeslot_uuid) { timeslot_response["data"]["uuid"] }
 
-    let(:options) do
-      { headers: { "UUID": timeslot_uuid } }
-    end
+    let(:headers) { { "UUID": timeslot_uuid } }
 
     let(:valid_payload) do
       booking_payload_helper.payload(
@@ -36,9 +36,13 @@ describe OnTheDotApi::Operations::CreateBooking do
     context "with valid payload" do
       it "returns valid response" do
         VCR.use_cassette('valid_create_booking_request') do
-          response_hash = described_class.new(valid_payload, options).execute
+          response_hash = described_class.new(
+            payload: valid_payload,
+            headers: headers
+          ).execute
 
           expect(response_hash["success"]).to eq({"status"=>"ok"})
+          expect(response_hash["data"]["status"]).to eq("Booked")
         end
       end
     end
@@ -55,7 +59,10 @@ describe OnTheDotApi::Operations::CreateBooking do
       it "raises 'OnTheDotApi::Errors::ResponseError' exception" do
         VCR.use_cassette('create_booking_request_with_invalid_postcode') do
           expect {
-            described_class.new(invalid_payload, options).execute
+            described_class.new(
+              payload: invalid_payload,
+              headers: headers
+            ).execute
           }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
         end
       end
@@ -72,7 +79,10 @@ describe OnTheDotApi::Operations::CreateBooking do
       it "raises 'OnTheDotApi::Errors::ResponseError' exception" do
         VCR.use_cassette('create_booking_request_with_invalid_timeslot_id') do
           expect {
-            described_class.new(invalid_payload, options).execute
+            described_class.new(
+              payload: invalid_payload,
+              headers: headers
+            ).execute
           }.to raise_exception(OnTheDotApi::Errors::ResponseError, "404 Not Found")
         end
       end
@@ -82,7 +92,10 @@ describe OnTheDotApi::Operations::CreateBooking do
       it "raises 'OnTheDotApi::Errors::ResponseError' exception" do
         VCR.use_cassette('create_booking_request_with_invalid_uuid') do
           expect {
-            described_class.new(valid_payload, headers: { "UUID": "1111" }).execute
+            described_class.new(
+              payload: valid_payload,
+              headers: { "UUID": "1111" }
+            ).execute
           }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
         end
       end

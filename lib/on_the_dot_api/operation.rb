@@ -1,12 +1,15 @@
 module OnTheDotApi
   class Operation
-    def initialize(payload, options = {})
-      @payload = payload
+    def initialize(options = {})
       @options = options
     end
 
     def config
       Client.config
+    end
+
+    def payload
+      options.fetch(:payload, {})
     end
 
     def headers
@@ -38,7 +41,7 @@ module OnTheDotApi
     end
 
     private
-    attr_reader :payload, :options
+    attr_reader :options
 
     def base_url
       config.base_url

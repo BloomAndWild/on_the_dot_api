@@ -37,7 +37,7 @@ end
 #### Get available timeslots
 
 ```
-OnTheDotApi::Operations::GetAvailableTimeslots.new(payload).execute
+OnTheDotApi::Operations::GetAvailableTimeslots.new(payload: `{YOUR PAYLOAD}`).execute
 ```
 
 Implements - http://developers.onthedot.com/docs/#TimeslotV2.
@@ -45,12 +45,23 @@ Implements - http://developers.onthedot.com/docs/#TimeslotV2.
 #### Create a booking
 
 ```
-OnTheDotApi::Operations::CreateBooking.new(payload, options).execute
+OnTheDotApi::Operations::CreateBooking.new(
+  payload: `{YOUR PAYLOAD}`,
+  headers: { "UUID": `{UUID FROM TIMESLOTS RESPONSE}` }
+).execute
 ```
 
-This operation relies on the `get available timeslots` operation for `timeslot_id` and `UUID`. `timeslot_id` is passed to the payload and `UUID` - options as part of the HTTP headers. Check `create_book_spec.rb` for an example of usage.
-
 Implements - http://developers.onthedot.com/docs/#create-booking.
+
+#### Cancel booking
+
+```
+OnTheDotApi::Operations::CancelBooking.new(
+  order_number: `{OnTheDot API ORDER NUMBER}`
+).execute
+```
+
+Implements - http://developers.onthedot.com/docs/#cancel-booking.
 
 ### Testing
 
