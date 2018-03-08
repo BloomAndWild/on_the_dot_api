@@ -10,6 +10,7 @@ require 'on_the_dot_api/operation'
 require 'on_the_dot_api/operations/get_available_timeslots'
 require 'on_the_dot_api/operations/create_booking'
 require 'on_the_dot_api/operations/cancel_booking'
+require 'on_the_dot_api/operations/retrieve_booking'
 
 module OnTheDotApi
 end
