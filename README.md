@@ -73,6 +73,19 @@ OnTheDotApi::Operations::RetrieveBooking.new(
 
 Implements - http://developers.onthedot.com/docs/#retrieve-booking.
 
+#### Amend booking
+
+```
+OnTheDotApi::Operations::AmendBooking.new(
+  payload: {YOUR PAYLOAD},
+  headers: { "UUID": {UUID FROM TIMESLOTS RESPONSE} }
+).execute
+```
+
+Notice: payload should include order number.
+
+Implements - http://developers.onthedot.com/docs/#amend-booking.
+
 ### Testing
 
 To run rspec specs you need to have OnTheDot API sandbox credentials (Api key and shop id). Those credentials should be added to `.env` file. `.env.sample` file is provided as example.
