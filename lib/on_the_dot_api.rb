@@ -13,6 +13,7 @@ require 'on_the_dot_api/operations/cancel_booking'
 require 'on_the_dot_api/operations/retrieve_booking'
 require 'on_the_dot_api/operations/amend_booking'
 require 'on_the_dot_api/operations/track_delivery'
+require 'on_the_dot_api/operations/get_all_bookings'
 
 module OnTheDotApi
 end

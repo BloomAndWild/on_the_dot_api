@@ -6,7 +6,7 @@ module OnTheDotApi
       end
 
       def endpoint
-        "#{base_url}/v1.0/cancelbooking/#{store_id}/#{options[:order_number]}"
+        "#{base_url}/v1.0/cancelbooking/#{store_id}/#{options[:order_number]}/"
       end
     end
   end

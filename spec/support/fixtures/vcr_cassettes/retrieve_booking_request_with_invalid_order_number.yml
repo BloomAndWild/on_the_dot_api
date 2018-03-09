@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://sbapi.onthedot.com/api/v1.0/bookings/orderid/BloomandWild1/abc
+    uri: https://sbapi.onthedot.com/api/v1.0/bookings/orderid/BloomandWild1/abc/
     body:
       encoding: UTF-8
       string: "{}"

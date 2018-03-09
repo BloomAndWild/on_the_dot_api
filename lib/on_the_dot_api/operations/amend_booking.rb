@@ -6,7 +6,7 @@ module OnTheDotApi
       end
 
       def endpoint
-        "#{base_url}/v1.0/amendbooking"
+        "#{base_url}/v1.0/amendbooking/"
       end
     end
   end
