@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sbapi.onthedot.com/api/v1.0/track/store/BloomandWild1/job/nil
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.4.3p205
+      Channel:
+      - ECOM
+      # Authorization:
+      # - Bearer {removed API key}
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Host:
+      - sbapi.onthedot.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Activityid:
+      - '8654713054679283114267376'
+      Assertion:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJpc3MiOiJ3c28yLm9yZy9wcm9kdWN0cy9hbSIsImV4cCI6MTUyMDU5Njg1NDIwNCwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9zdWJzY3JpYmVyIjoic3RldmVAYmxvb21hbmR3aWxkLmNvbSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25pZCI6IjE4OSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25uYW1lIjoiQmxvb21hbmRXaWxkIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9hcHBsaWNhdGlvbnRpZXIiOiJVbmxpbWl0ZWQiLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2FwaWNvbnRleHQiOiIvYXBpIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy92ZXJzaW9uIjoidjEuMCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdGllciI6IlVubGltaXRlZCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3VzZXJ0eXBlIjoiQVBQTElDQVRJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VuZHVzZXIiOiJzdGV2ZUBibG9vbWFuZHdpbGQuY29tIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9lbmR1c2VyVGVuYW50SWQiOiItMTIzNCIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2NvdW50cnkiOiJVSyIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InN0ZXZlQGJsb29tYW5kd2lsZC5jb20iLCAiaHR0cDovL3dzbzIub3JnL2NsYWltcy9naXZlbm5hbWUiOiJTdGV2ZSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2xhc3RuYW1lIjoiSmFuYXdheSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3JvbGUiOiJJbnRlcm5hbC9zdWJzY3JpYmVyLEludGVybmFsL2V2ZXJ5b25lLEludGVybmFsL2lkZW50aXR5IiwgImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdW5pcXVlSWQiOiIyMDUzNiJ9.
+      Channel:
+      - ECOM
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 09 Mar 2018 11:49:45 GMT
+      Server:
+      - PassThrough-HTTP
+      X-Forwarded-For:
+      - 185.52.144.70
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      Content-Length:
+      - '137'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": {},
+            "errors": [
+                {
+                    "errorId": "101504",
+                    "errorMessage": "Send timeout"
+                }
+            ]
+        }
+    http_version:
+  recorded_at: Fri, 09 Mar 2018 11:49:45 GMT
+recorded_with: VCR 4.0.0

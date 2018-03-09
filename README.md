@@ -86,6 +86,16 @@ Notice: payload should include order number.
 
 Implements - http://developers.onthedot.com/docs/#amend-booking.
 
+#### Track delivery
+
+```
+OnTheDotApi::Operations::TrackDelivery.new(
+  order_number: {OnTheDot API ORDER NUMBER}
+).execute
+```
+
+Implements - http://developers.onthedot.com/docs/#tracking-delivery.
+
 ### Testing
 
 To run rspec specs you need to have OnTheDot API sandbox credentials (Api key and shop id). Those credentials should be added to `.env` file. `.env.sample` file is provided as example.
