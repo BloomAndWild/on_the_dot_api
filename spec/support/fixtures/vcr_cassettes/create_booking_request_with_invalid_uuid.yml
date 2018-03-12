@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2
+    uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2/
     body:
       encoding: UTF-8
       string: '{"consumer":{"address":{"postCode":"SE11 5QY"}},"items":{"readyAt":"2018-03-14T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-14","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
@@ -51,7 +51,7 @@ http_interactions:
   recorded_at: Wed, 07 Mar 2018 16:14:12 GMT
 - request:
     method: post
-    uri: https://sbapi.onthedot.com/api/v1.0/booking
+    uri: https://sbapi.onthedot.com/api/v1.0/booking/
     body:
       encoding: UTF-8
       string: '{"timeslot":{"timeslotId":"3409275-im02hnk3ry0w"},"webhook":"","orderType":"1","supplierId":"CitySprint","accountNumber":"W99969","serviceType":"","referenceNo":"","departmentReferenceNo":"","store":{"storeId":"BloomandWild1","instruction":"test"},"consumer":{"name":"test","email":"xyzstore@mail.com","mobileNumber":"7777777777","address":{"firstLine":"House

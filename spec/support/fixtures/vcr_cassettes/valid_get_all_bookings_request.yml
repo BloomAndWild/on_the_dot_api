@@ -1,8 +1,8 @@
 ---
 http_interactions:
 - request:
-    method: delete
-    uri: https://sbapi.onthedot.com/api/v1.0/cancelbooking/BloomandWild1/nil/
+    method: get
+    uri: https://sbapi.onthedot.com/api/v1.0/bookings/storeid/BloomandWild1/?pageNumber=1&pageSize=25
     body:
       encoding: UTF-8
       string: "{}"
@@ -25,17 +25,17 @@ http_interactions:
       - sbapi.onthedot.com
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Access-Control-Allow-Headers:
       - authorization, Access-Control-Allow-Origin, Content-Type
       Activityid:
-      - '858346791246735885052820'
+      - '890877822822739881681502'
       Content-Type:
       - application/json
       Date:
-      - Thu, 08 Mar 2018 16:01:44 GMT
+      - Mon, 12 Mar 2018 10:23:35 GMT
       Server:
       - PassThrough-HTTP
       Transfer-Encoding:
@@ -44,8 +44,7 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{        "data": {     "orderNo": "nil",     "status": "Invalid orderNo."             },        "errors":{"errorMessage":"Invalid
-        orderNo."}        }'
+      string: '{"data":{"data":[],"size":0},"success":{"status":"ok"}}'
     http_version:
-  recorded_at: Thu, 08 Mar 2018 16:01:44 GMT
+  recorded_at: Mon, 12 Mar 2018 10:23:35 GMT
 recorded_with: VCR 4.0.0

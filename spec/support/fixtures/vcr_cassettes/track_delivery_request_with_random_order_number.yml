@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://sbapi.onthedot.com/api/v1.0/track/store/BloomandWild1/job/nil
+    uri: https://sbapi.onthedot.com/api/v1.0/track/store/BloomandWild1/job/nil/
     body:
       encoding: UTF-8
       string: "{}"

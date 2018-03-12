@@ -86,6 +86,16 @@ Notice: payload should include order number.
 
 Implements - http://developers.onthedot.com/docs/#amend-booking.
 
+### Get all bookings
+
+```
+OnTheDotApi::Operations::GettAllBookings.new(
+  headers: { params: { "pageNumber": 1, "pageSize": 25 }}
+).execute
+```
+
+Implements - http://developers.onthedot.com/docs/#get-all-bookings.
+
 #### Track delivery
 
 ```

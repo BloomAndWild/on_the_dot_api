@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2
+    uri: https://sbapi.onthedot.com/api/v1.0/timeslotsV2/
     body:
       encoding: UTF-8
       string: '{"consumer":{"address":{"postCode":"SE11 5QY"}},"items":{"readyAt":"2018-03-14T09:00:00Z","deliveryDates":[{"deliveryDate":"2018-03-14","openTime":"09:00","closeTime":"18:00"}]},"store":{"storeId":"BloomandWild1","timeslotDuration":2}}'
