@@ -25,8 +25,9 @@ module OnTheDotApi
         response = RestClient::Request.execute(
           method: http_method,
           url: endpoint,
-          payload: payload.to_json,
-          headers: headers
+          payload: payload.any? ? payload.to_json : nil,
+          headers: headers,
+          log: config.logger
         )
         JSON.parse(response.body)
       rescue RestClient::ExceptionWithResponse => e

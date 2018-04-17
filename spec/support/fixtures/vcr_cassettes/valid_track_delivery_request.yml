@@ -117,8 +117,8 @@ http_interactions:
     method: get
     uri: https://sbapi.onthedot.com/api/v1.0/track/store/BloomandWild1/job/10004217/
     body:
-      encoding: UTF-8
-      string: "{}"
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept:
       - "*/*"
@@ -132,8 +132,6 @@ http_interactions:
       # - Bearer {removed API key}
       Content-Type:
       - application/json
-      Content-Length:
-      - '2'
       Host:
       - sbapi.onthedot.com
   response:
