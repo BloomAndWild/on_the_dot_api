@@ -4,8 +4,8 @@ http_interactions:
     method: delete
     uri: https://sbapi.onthedot.com/api/v1.0/cancelbooking/BloomandWild1/nil/
     body:
-      encoding: UTF-8
-      string: "{}"
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept:
       - "*/*"
@@ -19,8 +19,6 @@ http_interactions:
       # - Bearer {removed API key}
       Content-Type:
       - application/json
-      Content-Length:
-      - '2'
       Host:
       - sbapi.onthedot.com
   response:

@@ -51,7 +51,7 @@ describe OnTheDotApi::Operations::TrackDelivery do
       it "raises 'OnTheDotApi::Errors::ResponseError' exception" do
         VCR.use_cassette('track_delivery_request_with_random_order_number') do
           expect {
-            described_class.new(order_number: "nil").execute
+            described_class.new(order_number: "abc").execute
           }.to raise_exception(OnTheDotApi::Errors::ResponseError, "401 Unauthorized")
         end
       end
