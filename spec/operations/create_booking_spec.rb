@@ -63,7 +63,7 @@ describe OnTheDotApi::Operations::CreateBooking do
               payload: invalid_payload,
               headers: headers
             ).execute
-          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
+          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400")
         end
       end
     end
@@ -83,7 +83,7 @@ describe OnTheDotApi::Operations::CreateBooking do
               payload: invalid_payload,
               headers: headers
             ).execute
-          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "404 Not Found")
+          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "404")
         end
       end
     end
@@ -96,7 +96,7 @@ describe OnTheDotApi::Operations::CreateBooking do
               payload: valid_payload,
               headers: { "UUID": "1111" }
             ).execute
-          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
+          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400")
         end
       end
     end

@@ -11,7 +11,7 @@ describe OnTheDotApi::Operations::GettAllBookings do
     it "gets all the bookings" do
       VCR.use_cassette('valid_get_all_bookings_request') do
         response_hash = described_class.new(
-          headers: { params: { "pageNumber": 1, "pageSize": 25 }}
+          params: { "pageNumber": 1, "pageSize": 25 }
         ).execute
 
         expect(response_hash["success"]).to eq({"status"=>"ok"})

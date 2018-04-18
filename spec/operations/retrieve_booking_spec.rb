@@ -53,7 +53,7 @@ describe OnTheDotApi::Operations::RetrieveBooking do
         VCR.use_cassette('retrieve_booking_request_with_invalid_order_number') do
           expect {
             described_class.new(order_number: "abc").execute
-          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
+          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400")
         end
       end
     end

@@ -52,7 +52,7 @@ describe OnTheDotApi::Operations::CancelBooking do
         VCR.use_cassette('cancel_booking_request_with_random_order_number') do
           expect {
             described_class.new(order_number: "nil").execute
-          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "404 Not Found")
+          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "404")
         end
       end
     end

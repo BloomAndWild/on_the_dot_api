@@ -1,4 +1,4 @@
-require 'rest-client'
+require 'faraday'
 
 require 'on_the_dot_api/version'
 require 'on_the_dot_api/config'

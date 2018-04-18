@@ -5,7 +5,7 @@ describe OnTheDotApi::Errors::ResponseError do
   let(:payload) { "payload example" }
   let(:http_body) { "Bad Request"}
   let(:response) { "Bad Request" }
-  let(:message) { "400 Bad Request"}
+  let(:message) { "400"}
 
   subject do
     described_class.new(
