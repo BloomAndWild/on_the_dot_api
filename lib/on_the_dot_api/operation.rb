@@ -12,6 +12,14 @@ module OnTheDotApi
       options.fetch(:payload, {})
     end
 
+    def params
+      options.fetch(:params, {})
+    end
+
+    def body
+      payload.to_json if payload.any?
+    end
+
     def headers
       {
         "Channel" => "ECOM",
@@ -21,22 +29,20 @@ module OnTheDotApi
     end
 
     def execute
-      begin
-        response = RestClient::Request.execute(
-          method: http_method,
-          url: endpoint,
-          payload: payload.any? ? payload.to_json : nil,
-          headers: headers,
-          log: config.logger
-        )
+      conn = Faraday.new
+      conn.headers = headers
+      conn.params = params if params.any?
+      conn.use Faraday::Response::Logger, config.logger, bodies: true
+      response = conn.public_send(http_method, endpoint, body)
+      if response.success?
         JSON.parse(response.body)
-      rescue RestClient::ExceptionWithResponse => e
+      else
         raise OnTheDotApi::Errors::ResponseError.new(
           payload: payload.inspect,
-          code: e.http_code,
-          http_body: e.http_body,
-          response: e.response.inspect,
-          message: e.message
+          code: response.status,
+          http_body: response.body,
+          response: response.inspect,
+          message: "#{response.status}"
         )
       end
     end

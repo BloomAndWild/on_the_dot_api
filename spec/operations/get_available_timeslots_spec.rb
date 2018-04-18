@@ -34,7 +34,7 @@ describe OnTheDotApi::Operations::GetAvailableTimeslots do
         VCR.use_cassette('invalid_get_available_timeslots_request') do
           expect {
             described_class.new(payload: invalid_payload).execute
-          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400 Bad Request")
+          }.to raise_exception(OnTheDotApi::Errors::ResponseError, "400")
         end
       end
     end

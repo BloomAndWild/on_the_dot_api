@@ -1,3 +1,5 @@
+require 'logger'
+
 def configure_client
   OnTheDotApi::Client.configure do |config|
     logger = Logger.new(STDERR)

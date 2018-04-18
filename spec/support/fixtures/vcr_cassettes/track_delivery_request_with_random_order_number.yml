@@ -7,37 +7,35 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.4.3p205
       Channel:
       - ECOM
       # Authorization:
       # - Bearer {removed API key}
       Content-Type:
       - application/json
-      Host:
-      - sbapi.onthedot.com
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 401
       message: Unauthorized
     headers:
       Accept-Encoding:
-      - gzip, deflate
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Activityid:
-      - '1203087168428255079286028'
+      - '1210232109966119986787977'
       Assertion:
-      - eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJpc3MiOiJ3c28yLm9yZy9wcm9kdWN0cy9hbSIsImV4cCI6MTUyMzk3MjMzMzE4MCwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9zdWJzY3JpYmVyIjoic3RldmVAYmxvb21hbmR3aWxkLmNvbSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25pZCI6IjE4OSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25uYW1lIjoiQmxvb21hbmRXaWxkIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9hcHBsaWNhdGlvbnRpZXIiOiJVbmxpbWl0ZWQiLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2FwaWNvbnRleHQiOiIvYXBpIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy92ZXJzaW9uIjoidjEuMCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdGllciI6IlVubGltaXRlZCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3VzZXJ0eXBlIjoiQVBQTElDQVRJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VuZHVzZXIiOiJzdGV2ZUBibG9vbWFuZHdpbGQuY29tIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9lbmR1c2VyVGVuYW50SWQiOiItMTIzNCIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2NvdW50cnkiOiJVSyIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InN0ZXZlQGJsb29tYW5kd2lsZC5jb20iLCAiaHR0cDovL3dzbzIub3JnL2NsYWltcy9naXZlbm5hbWUiOiJTdGV2ZSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2xhc3RuYW1lIjoiSmFuYXdheSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3JvbGUiOiJJbnRlcm5hbC9zdWJzY3JpYmVyLEludGVybmFsL2V2ZXJ5b25lLEludGVybmFsL2lkZW50aXR5IiwgImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdW5pcXVlSWQiOiIyMDUzNiJ9.
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJpc3MiOiJ3c28yLm9yZy9wcm9kdWN0cy9hbSIsImV4cCI6MTUyNDA0NDY1NDgzOCwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9zdWJzY3JpYmVyIjoic3RldmVAYmxvb21hbmR3aWxkLmNvbSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25pZCI6IjE4OSIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvYXBwbGljYXRpb25uYW1lIjoiQmxvb21hbmRXaWxkIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9hcHBsaWNhdGlvbnRpZXIiOiJVbmxpbWl0ZWQiLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2FwaWNvbnRleHQiOiIvYXBpIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy92ZXJzaW9uIjoidjEuMCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdGllciI6IlVubGltaXRlZCIsImh0dHA6Ly93c28yLm9yZy9jbGFpbXMva2V5dHlwZSI6IlBST0RVQ1RJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3VzZXJ0eXBlIjoiQVBQTElDQVRJT04iLCJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VuZHVzZXIiOiJzdGV2ZUBibG9vbWFuZHdpbGQuY29tIiwiaHR0cDovL3dzbzIub3JnL2NsYWltcy9lbmR1c2VyVGVuYW50SWQiOiItMTIzNCIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2NvdW50cnkiOiJVSyIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InN0ZXZlQGJsb29tYW5kd2lsZC5jb20iLCAiaHR0cDovL3dzbzIub3JnL2NsYWltcy9naXZlbm5hbWUiOiJTdGV2ZSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL2xhc3RuYW1lIjoiSmFuYXdheSIsICJodHRwOi8vd3NvMi5vcmcvY2xhaW1zL3JvbGUiOiJJbnRlcm5hbC9zdWJzY3JpYmVyLEludGVybmFsL2V2ZXJ5b25lLEludGVybmFsL2lkZW50aXR5IiwgImh0dHA6Ly93c28yLm9yZy9jbGFpbXMvdW5pcXVlSWQiOiIyMDUzNiJ9.
       Channel:
       - ECOM
       Content-Type:
       - application/json
       Date:
-      - Tue, 17 Apr 2018 13:39:07 GMT
+      - Wed, 18 Apr 2018 09:29:50 GMT
       Server:
       - PassThrough-HTTP
       X-Forwarded-For:
@@ -63,5 +61,5 @@ http_interactions:
             ]
         }
     http_version:
-  recorded_at: Tue, 17 Apr 2018 13:39:07 GMT
+  recorded_at: Wed, 18 Apr 2018 09:29:51 GMT
 recorded_with: VCR 4.0.0
