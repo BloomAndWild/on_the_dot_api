@@ -6,7 +6,7 @@ module OnTheDotApi
       end
 
       def endpoint
-        "#{base_url}/v1.0/track/store/#{store_id}/job/#{options[:order_number]}/"
+        "#{base_url}/v1.0/track/store/#{store_id}/job/#{options[:order_number]}"
       end
     end
   end
